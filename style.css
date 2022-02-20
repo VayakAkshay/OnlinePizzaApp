@@ -1,0 +1,574 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+header{
+	height: 100px;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	transition: 1s;
+}
+header:hover{
+	background-color: black;
+}
+header .logo{
+	height: 50px;
+	width: 150px;
+	/* border: 2px solid white; */
+	align-self: center;
+	margin-left: 30px;
+	font-size: 30px;
+	color: white;
+}
+header ul{
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	height: 40px;
+	display: block;
+	width: 40%;
+	margin: auto;
+	/* border: 2px solid white; */
+	align-self: center;
+}
+header ul li{
+	display: inline;
+	font-size: 25px;
+	padding-left: 20px;
+	font-weight: 20px;
+}
+header ul li a{
+	text-decoration: none;
+	color: white;
+	display: inline;
+	transition: 1s;
+}
+header ul li a:hover{
+	color: yellowgreen;
+}
+header button{
+	height: 50px;
+	width: 50px;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 25px;
+	margin-right: 25px;
+	border: none;
+	cursor: pointer;
+	display: none;
+	transition: 1s;
+}
+header button:hover{
+	background-color: yellowgreen;
+	color: black;
+}
+.header1{
+	position: absolute;
+	height: 300px;
+	width: 100%;
+	margin-top: 100px;
+	font-size: 30px;
+	color: white;
+	text-align: center;
+	/* background-color: rgb(46, 42, 42); */
+	background: rgba(0, 0, 0, 0.5);
+	display: none;
+	transition: 2s ease-in-out;
+}
+.header1 ul li{
+	list-style: none;
+	padding-top: 25px;
+}
+.header1 ul li a{
+	text-decoration: none;
+	color: white;
+}
+.header1 ul li a:hover{
+	color: yellowgreen;
+}
+main{
+	height: 100%;
+	width: 100%;
+	/* border: 2px solid black; */
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: 25px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+main .contents{
+	height: 100vh;
+	width: 100%;
+	background-image: url("pizaa.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+main .text{
+	position: absolute;
+	height: 300px;
+	width: 100%;
+	margin-top: 350px;
+	font-size: 30px;
+	color: white;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.5);
+}
+main .text h1{
+	margin-top: 30px;
+}
+main .text button{
+	height: 50px;
+	width: 200px;
+	font-size: 20px;
+	background-color: black;
+	border: none;
+	cursor: pointer;
+	transition: 1s;
+}
+main .text button a{
+	text-decoration: none;
+	color: white;
+	transition: 1s;
+}
+main .text button:hover{
+	background-color: yellowgreen;
+	color: black;
+}
+main .text button a:hover{
+	color: black;
+}
+main .basket{
+	height: 50px;
+	position: fixed;
+	width: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 95%;
+	background-color: black;
+	color: white;
+	margin-top: 600px;
+	cursor: pointer;
+	transition: 1s;
+}
+main .basket:hover{
+	background-color: yellowgreen;
+	color: black;
+}
+main .orders{
+	height: 100%;
+	width: 46%;
+	display: none;
+	position: fixed;
+	background-color: white;
+	margin-left: 54%;
+	transition: 2s;
+	overflow: scroll;
+}
+main .orders .close{
+	height: 40px;
+	width: 40px;
+	background-color: black;
+	color: white;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	margin-top: 10px;
+	margin-left: 10px;
+	transition: 1s;
+}
+main .orders .items{
+	height: 260px;
+	width: 95%;
+	margin-left: 20px;
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	color: black;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+main .orders .items .contant{
+	height: 120px;
+	width: 100%;
+	display: flex;
+	/* border: 2px solid black; */
+}
+main .orders .items .image img{
+	height: 100px;
+	width: 150px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+main .orders .items .name{
+	height: 100px;
+	width: 100%;
+	font-size: 25px;
+	text-align: center;
+	/* border: 2px solid black; */
+}
+main .orders .confirm{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+main .orders .confirm button{
+	height: 40px;
+	width: 100px;
+	font-size: 20px;
+	background-color: black;
+	color: white;
+	cursor: pointer;
+	transition: 1s;
+	border: none;
+}
+main .orders .confirm button:hover{
+	background-color: yellowgreen;
+	color: black;
+}
+main .orders .close:hover{
+	background-color: yellowgreen;
+	color: black;
+}
+main .items .quantity{
+	width: 100%;
+	text-align: center;
+	text-align: center;
+	margin-top: 10px;
+}
+main .items .prices{
+	text-align: center;
+}
+main .orderconf{
+	height: 100vh;
+	width: 100%;
+	border: 2px solid black;
+	position: fixed;
+	background-color: white;
+	display: none;
+}
+main .orderconf .alert{
+	height: 50px;
+}
+main .orderconf .error{
+	height: 50px;
+	width: 100%;
+	background-color: red;
+	display: none;
+	align-items: center;
+	color: white;
+}
+main .orderconf .inputname{
+	margin-top: 100px;
+	height: 100px;
+	width: 100%;
+	/* border: 2px solid black; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+main .orderconf .inputname input{
+	height: 35px;
+	width: 500px;
+	outline: none;
+	border: none;
+	font-size: 20px;
+	border-bottom: 2px solid black;
+}
+main .orderconf .inputadd{
+	height: 100px;
+	width: 100%;
+	/* border: 2px solid black; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+main .orderconf .inputadd input{
+	height: 35px;
+	width: 500px;
+	outline: none;
+	border: none;
+	font-size: 20px;
+	border-bottom: 2px solid black;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+main .orderconf .inputcity{
+	/* margin-top: 100px; */
+	height: 100px;
+	width: 100%;
+	/* border: 2px solid black; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+main .orderconf .inputcity input{
+	height: 35px;
+	width: 500px;
+	outline: none;
+	border: none;
+	font-size: 20px;
+	border-bottom: 2px solid black;
+}
+main .orderconf .inputpincode{
+	height: 100px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+main .orderconf .inputpincode input{
+	height: 35px;
+	width: 500px;
+	outline: none;
+	border: none;
+	font-size: 20px;
+	border-bottom: 2px solid black;
+}
+main .orderconf .gorder{
+	height: 100px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+main .orderconf .gorder button{
+	height: 50px;
+	width: 150px;
+	background-color: black;
+	color: white;
+	cursor: pointer;
+	border: none;
+	transition: 1s;
+	font-size: 20px;
+}
+main .orderconf .gorder button:hover{
+	background-color: yellowgreen;
+	color: black;
+}
+main .confermation{
+	height: 500px;
+	width: 90%;
+	background-color: white;
+	position: fixed;
+	/* border: 2px solid black; */
+	margin-top: 90px;
+	margin-left: 70px;
+	text-align: center;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	display: none;
+}
+#noorder{
+	text-align: center;
+}
+main .confermation h1{
+	color: red;
+}
+main .confermation button{
+	height: 50px;
+	width: 100px;
+	font-size: 20px;
+	cursor: pointer;
+	background-color: black;
+	color: white;
+	transition: 1s;
+	border: none;
+}
+main .confermation button:hover{
+	background-color: yellowgreen;
+	color: black;
+}
+main .confermation .img{
+	height: 200px;
+	width: 100%;
+	/* border: 2px solid black; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+main .confermation .img img{
+	height: 200px;
+	width: 200px;
+}
+main .confermation .text{
+	height: 100px;
+	width: 100%;
+	border: 2px solid black;
+}
+.container{
+	height: 100%;
+	width: 100%;
+	/* border: 2px solid black; */
+	/* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+}
+.container .offer{
+	height: 100%;
+	width: 100%;
+	font-size: 20px;
+	font-family: 'Rubik', sans-serif;
+}
+.container .offer h1{
+	text-align: center;
+}
+.container .offer .images{
+	display: flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+	margin-top: 20px;
+	flex-wrap: wrap;
+}
+.container .offer .img1 img{
+	height: 300px;
+	width: 100%;
+	cursor: pointer;
+}
+.container .offer .img2 img{
+	height: 300px;
+	width: 100%;
+	cursor: pointer;
+}
+.container .contain{
+	height: 100%;
+	width: 100%;
+	/* border: 2px solid black; */
+	font-family: 'Rubik', sans-serif;
+	margin-top: 30px;
+}
+.container .contain h2{
+	text-align: center;
+}
+.container .contain .pizza{
+	height: 100%;
+	width: 100%;
+	/* border: 2px solid black; */
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	gap: 50px;
+}
+.container .contain .pizza .box1{
+	height: 350px;
+	width: 300px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.container .contain .pizza .box1 img{
+	height: 150px;
+	width: 100%;
+}
+.container .contain .pizza .box1 h4{
+	text-align: center;
+}
+.container .contain .pizza .box1 .order{
+	display: flex;
+	height: 50px;
+	align-items: center;
+	justify-content: center;
+}
+.container .contain .pizza .box1 .order button{
+	height: 20px;
+	width: 20px;
+	margin-left: 20px;
+	font-size: 15px;
+	font-weight: 40px;
+	cursor: pointer;
+	margin-right: 20px;
+}
+.container .contain .pizza .box1 .price{
+	height: 50px;
+	display: flex;
+	font-size: 20px;
+	justify-content: center;
+	align-items: center;
+}
+.container .contain .pizza .box1 .add{
+	display: flex;
+	height: 50px;
+	justify-content: center;
+	align-items: center;
+}
+.container .contain .pizza .box1 .add button{
+	height: 30px;
+	width: 60px;
+	background-color: black;
+	border: none;
+	color: white;
+	font-size: 20px;
+	cursor: pointer;
+	transition: 1s;
+}
+.container .contain .pizza .box1 .add button:hover{
+	background-color: yellowgreen;
+	color: black;
+}
+footer{
+	background-color: rgb(44 44 44);
+	color: white;
+	height: 200px;
+	width: 100%;
+	margin-top: 50px;
+	font-family: 'Rubik', sans-serif;
+	display: flex;
+	flex-wrap: wrap;
+}
+footer .content1{
+	height: 50%;
+	width: 50%;
+	/* border: 2px solid white; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+footer .content2{
+	height: 50%;
+	width: 50%;
+	/* border: 2px solid white; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+footer .content2 ul li{
+	display: inline;
+	margin-left: 10px;
+	cursor: pointer;
+}
+footer .content2 ul li:hover{
+	/* border-bottom: 2px solid white; */
+	color: rgb(207, 152, 152);
+}
+footer .content3{
+	height: 50%;
+	width: 100%;
+	/* border: 2px solid whitesmoke; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+footer .content3 .play{
+	cursor: pointer;
+}
+footer .content3 .app{
+	margin-left: 50px;
+	cursor: pointer;
+}

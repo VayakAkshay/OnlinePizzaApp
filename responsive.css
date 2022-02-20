@@ -1,0 +1,98 @@
+@media only screen and (max-width: 1500px){
+    main .text{
+        margin-top: 250px;
+        height: 250px;
+    }
+}
+@media screen and (max-width: 1000px){
+    main .basket{
+        margin-left: 92%;
+    }
+}
+@media only screen and (max-width: 900px){
+    main .text{
+        margin-top: 400px;
+    }
+
+}
+@media screen and (max-width: 850px){
+    header ul{
+        display: none;
+    }
+    header{
+        position: absolute;
+    }
+    header button{
+        display: block;
+    }
+    main .orders{
+        width: 90%;
+        margin-left: 5%;
+    }
+    main .confermation{
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width: 660px){
+    main .text{
+        height: 200px;
+    }
+    main .text h1{
+        margin-top: 10px;
+        font-size: 35px;
+    }
+    main .basket{
+        margin-left: 90%;
+    }
+    main .confermation{
+        width: 99%;
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width: 500px){
+    main .orders{
+        width: 100%;
+        margin-left: 0%;
+    }
+    
+    main .orders .items .name{
+        font-size: 20px;
+        font-weight: 30px;
+    }
+    main .orders .items .image img{
+        height: 80px;
+        width: 130px;
+    }
+    /* main .orders .items .name */
+
+}
+@media screen and (max-width: 510px){
+    main .basket{
+        margin-left: 87%;
+    }
+}
+@media screen and (max-width: 438px){
+    footer .content3 .app{
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width: 400px){
+    main .basket{
+        margin-left: 83%;
+    }
+}
+@media screen and (max-width: 390px){
+    footer{
+        height: 250px;
+    }
+}
+@media screen and (max-width: 380px){
+    main .text{
+        height: 250px;
+    }
+}
+@media screen and (max-width: 280px){
+    main .basket{
+        margin-left: 80%;
+    }
+}

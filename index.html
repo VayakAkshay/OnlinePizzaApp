@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Online Pizza - Pizza Zone</title>
+</head>
+<body>
+    <main>
+        <div class="contents">
+            
+        </div>
+    <header>
+        <div class="logo">
+            Pizza Zone
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a id="ordered" href="#orders">Orders</a></li>
+            <li><a href="#offers">Offers</a></li>
+        </ul>
+        <Button id="btn_click">
+            <i class="fa fa-reorder" id="open_btn" style="font-size:30px"></i>
+            <i class="fa fa-remove" id="close_btn" style="font-size:30px"></i>
+        </Button>
+    </header>
+    <div class="header1" id="header1">
+        <ul id="ulli">
+            <li><a href="#">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a id="ordered1" href="#">Order</a></li>
+            <li><a href="#offers">Offers</a></li>
+        </ul>
+    </div>
+    <div class="text">
+        <h1>Welcome to Pizza Zone</h1><br><br>
+        <button><a link href="#pizza">Buy Pizza</a></button>
+    </div>
+    <div class="basket" id="basket">
+        <i class="fa fa-shopping-cart"></i>
+    </div>
+    <div class="orders" id="orders">
+        <div class="close" id="close">
+            X
+        </div>
+        <div class="add" id="items">
+            <div class="noorder" id="noorder">
+                No Any Order Yet
+            </div>
+        </div>
+        <div class = "confirm">
+            <button id = "confirm">Confirm</button>
+        </div>
+    </div>
+    <div class="orderconf" id="orderconf">
+        <div class="alert">
+            <div class="error" id="error">
+                ! Please Enter Valid Details
+            </div>
+        </div>
+        
+        <div class="inputname">
+            <input type="text" id="name" placeholder="Enter Your Name">
+        </div>
+        <div class="inputadd">
+            <input type="text" id="address" placeholder="Address (Area And Street)">
+        </div>
+        <div class="inputcity">
+            <input type="text" id="city" placeholder="City">
+        </div>
+        <div class="inputpincode">
+            <input type="number" id="pcode" placeholder="Pincode">
+        </div>
+        <div class="gorder">
+            <button id="submit">
+                Continue
+            </button>
+        </div>
+    </div>
+    <div class="confermation" id="confermation">
+        <div class="img">
+            <img src="confirm.jpg" alt="">
+        </div>
+        <h1>Order Successful</h1><br>
+        <h3>Thank you so much for your Order.</h3><br>
+        <button id="back">Back</button>
+    </div>
+    </main>
+    <div class="container">
+        <div class="offer" id="offers">
+            <h1>
+                Cupons And Offers 
+            </h1>
+            <div class="images">
+                <div class="img1">
+                    <img src="img1.jpg" alt="">
+                </div>
+                <div class="img2">
+                   <img src="img2.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="contain" id="pizza">
+            <h2>
+                Best Sellors
+            </h2>
+            <div class="pizza">
+                <div class="box1">
+                    <img src="image1.jpg" alt="">
+                    <h4>Meal for 4: Indi Tandoori Paneer & Peppy Paneer Combo</h4>
+                    <div class="order">
+                        <button onclick="minusItem()">-</button>
+                        <div class="number" id="number1">1</div>
+                        <button onclick="plusItem()">+</button>
+                    </div>
+                    <div class="price" id="price1">
+                        ₹​ 599
+                    </div>
+                    <div class="add">
+                        <button onclick="addItem1()">Add</button>
+                    </div>
+                </div>
+                <div class="box1">
+                    <img src="image2.jpg" alt=""><br>
+                    <h4>Peppy Paneer
+                    </h4>
+                    <div class="order">
+                        <button onclick="minusItem2()">-</button>
+                        <div class="number" id="number2">1</div>
+                        <button onclick="plusItem2()">+</button>
+                    </div>
+                    <div class="price" id="price2">
+                      ₹​ 499
+                    </div>
+                    <div class="add">
+                        <button onclick="addItem2()">Add</button>
+                    </div>
+                </div>
+                <div class="box1">
+                    <img src="image3.jpg" alt=""><br>
+                    <h4>Meal for 2: Farmhouse Combo</h4>
+                    <div class="order">
+                        <button onclick="minusItem3()">-</button>
+                        <div class="number" id="number3">1</div>
+                        <button onclick="plusItem3()">+</button>
+                    </div>
+                    <div class="price" id="price3">
+                        ₹​ 459
+                    </div>
+                    <div class="add">
+                        <button onclick="addItem3()">Add</button>
+                    </div>
+                </div>
+                <div class="box1">
+                    <img src="image4.jpg" alt=""><br>
+                    <h4>Party Combo - 4 Veg Pizza varieties + Sides & Pepsi
+                    </h4>
+                    <div class="order">
+                        <button onclick="minusItem4()">-</button>
+                        <div class="number" id="number4">1</div>
+                        <button onclick="plusItem4()">+</button>
+                    </div>
+                    <div class="price" id="price4">
+                        ₹​ 699
+                    </div>
+                    <div class="add">
+                        <button onclick="addItem4()">Add</button>
+                    </div>
+                </div>
+                <div class="box1">
+                    <img src="image5.webp" alt=""><br>
+                    <h4>Margherita
+                    </h4>
+                    <div class="order">
+                        <button onclick="minusItem5()">-</button>
+                        <div class="number" id="number5">1</div>
+                        <button onclick="plusItem5()">+</button>
+                    </div>
+                    <div class="price" id="price5">
+                        ₹​ 399
+                    </div>
+                    <div class="add">
+                        <button onclick="addItem5()">Add</button>
+                    </div>
+                </div>
+                <div class="box1">
+                    <img src="image6.webp" alt=""><br>
+                    <h4>Farmhouse
+                    </h4>
+                    <div class="order">
+                        <button onclick="minusItem6()">-</button>
+                        <div class="number" id="number6">1</div>
+                        <button onclick="plusItem6()">+</button>
+                    </div>
+                    <div class="price" id="price6">
+                        ₹​ 499
+                    </div>
+                    <div class="add">
+                        <button onclick="addItem6()">Add</button>
+                    </div>
+                </div>
+                <div class="box1">
+                    <img src="image7.webp" alt=""><br>
+                    <h4>Veg Extravaganza
+                    </h4>
+                    <div class="order">
+                        <button onclick="minusItem7()">-</button>
+                        <div class="number" id="number7">1</div>
+                        <button onclick="plusItem7()">+</button>
+                    </div>
+                    <div class="price" id="price7">
+                        ₹​ 599
+                    </div>
+                    <div class="add">
+                        <button onclick="addItem7()">Add</button>
+                    </div>
+                </div>
+                <div class="box1">
+                    <img src="image8.webp" alt=""><br>
+                    <h4>Veggie Paradise
+                    </h4>
+                    <div class="order">
+                        <button onclick="minusItem8()">-</button>
+                        <div class="number" id="number8">1</div>
+                        <button onclick="plusItem8()">+</button>
+                    </div>
+                    <div class="price" id="price8">
+                        ₹​ 449
+                    </div>
+                    <div class="add">
+                        <button onclick="addItem8()">Add</button>
+                    </div>
+                </div>
+                <div class="box1">
+                    <img src="image9.webp" alt=""><br>
+                    <h4>Cheese n Corn
+                    </h4>
+                    <div class="order">
+                        <button onclick="minusItem9()">-</button>
+                        <div class="number" id="number9">1</div>
+                        <button onclick="plusItem9()">+</button>
+                    </div>
+                    <div class="price" id="price9">
+                        ₹​ 349
+                    </div>
+                    <div class="add">
+                        <button onclick="addItem9()">Add</button>
+                    </div>
+                </div>
+                <div class="box1">
+                    <img src="image10.jpg" alt=""><br>
+                    <h4>The Unthinkable Pizza
+                    </h4>
+                    <div class="order">
+                        <button onclick="minusItem10()">-</button>
+                        <div class="number" id="number10">1</div>
+                        <button onclick="plusItem10()">+</button>
+                    </div>
+                    <div class="price" id="price10">
+                        ₹​ 699
+                    </div>
+                    <div class="add">
+                        <button onclick="addItem10()">Add</button>
+                    </div>
+                </div>
+                <div class="box1">
+                    <img src="image11.jpg" alt=""><br>
+                    <h4>The 4 Cheese Pizza
+                    </h4>
+                    <div class="order">
+                        <button onclick="minusItem11()">-</button>
+                        <div class="number" id="number11">1</div>
+                        <button onclick="plusItem11()">+</button>
+                    </div>
+                    <div class="price" id="price11">
+                        ₹​ 599
+                    </div>
+                    <div class="add">
+                        <button onclick="addItem11()">Add</button>
+                    </div>
+                </div>
+                <div class="box1">
+                    <img src="image12.jpg" alt=""><br>
+                    <h4>The Cheese Dominator
+                    </h4>
+                    <div class="order">
+                        <button onclick="minusItem12()">-</button>
+                        <div class="number" id="number12">1</div>
+                        <button onclick="plusItem12()">+</button>
+                    </div>
+                    <div class="price" id="price12">
+                        ₹​ 349
+                    </div>
+                    <div class="add">
+                        <button onclick="addItem12()">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="content1">
+            <h1>Pizza Zone</h1><br><br>
+        </div>
+        <div class="content2">
+            <ul>
+                <li>Disclaimer</li>
+                <li>Privacy Policy</li>
+                <li>Faq</li>
+                <li>Terms & Conditions</li>
+                <li>Feedback</li>
+            </ul>
+        </div>
+            <div class="content3">
+                <div class="play">
+                    <img src="playstore.png" alt="">
+                </div>
+                <div class="app">
+                    <img src="app_store.png" alt="">
+                </div>
+            </div>
+    </footer>
+    </div>
+    <script>
+        let numbers1 = 1;
+        let pr1 = 599;
+        let basket = document.getElementById('basket');
+        let orders = document.getElementById('orders');
+        let ordered = document.getElementById('ordered');
+        let ordered1 = document.getElementById('ordered1');
+        let close = document.getElementById('close');
+        let price1 = document.getElementById('price1');
+        let items = document.getElementById('items');
+        let confirm = document.getElementById('confirm');
+        let num  = 1;
+        basket.addEventListener('click',function() {
+            orders.style.display = "block";
+        });
+        ordered.addEventListener('click',function(){
+            orders.style.display = "block";
+        });
+        ordered1.addEventListener('click',function(){
+            orders.style.display = "block";
+        });
+        close.addEventListener('click',function() {
+            orders.style.display = "none";
+        })
+        let number1 = document.getElementById('number1');
+        function plusItem(){
+            pr1 = pr1 + 599;
+            numbers1 = numbers1 + 1;
+            if(numbers1>=10){
+                pr1 = 5990;
+                numbers1 = 10;
+            }
+            number1.innerText  = numbers1;
+            price1.innerHTML = `₹​ ${pr1}`;
+        }
+        function minusItem(){
+            pr1 = pr1 - 599;
+            numbers1 = numbers1 - 1;
+            if(numbers1<=1){
+                numbers1 = 1;
+                pr1 = 599;
+            }
+            number1.innerText  = numbers1;
+            price1.innerHTML = `₹​ ${pr1}`;
+        }
+        let html = '';
+        confirm.style.display = "none";
+        function addItem1() {
+            html +=`
+            <div class="items">
+                <div class="contant">
+                    <div class="image">
+                        <img src = "image${num}.jpg">
+                    </div>
+                    <div class="name">
+                        Meal for 4: Indi Tandoori Paneer And Peppy Paneer Combo
+                    </div>
+                </div>
+                <div class="quantity">
+                    quantity = ${numbers1}
+                </div><br>
+                <div class="prices">
+                   Price = ${pr1}/-
+                </div>
+            </div>
+            `;
+            confirm.style.display = "block";
+            orders.style.display = "block";
+            items.innerHTML = html;
+            document.getElementById('noorder').style.display = "none";
+        }
+        let pr2 = 499;
+        let numbers2 = 1;
+        let number2 = document.getElementById('number2');
+        function plusItem2(){
+            pr2 = pr2 + 499;
+            numbers2 = numbers2 + 1;
+            if(numbers2>=10){
+                pr2 = 4990;
+                numbers2 = 10;
+            }
+            number2.innerText  = numbers2;
+            price2.innerHTML = `₹​ ${pr2}`;
+        }
+        function minusItem2(){
+            pr2 = pr2 - 499;
+            numbers2 = numbers2 - 1;
+            if(numbers2<=1){
+                numbers2 = 1;
+                pr2 = 499;
+            }
+            number2.innerText  = numbers2;
+            price2.innerHTML = `₹​ ${pr2}`;
+        }
+        function addItem2() {
+            num = 2;
+            html += `
+            <div class="items">
+                <div class="contant">
+                    <div class="image">
+                        <img src = "image${num}.jpg">
+                    </div>
+                    <div class="name">
+                        Peppy Paneer
+                    </div>
+                </div>
+                <div class="quantity">
+                    quantity = ${numbers2}
+                </div><br>
+                <div class="prices">
+                   Price = ${pr2}/-
+                </div>
+            </div>
+            `;
+            confirm.style.display = "block";
+            orders.style.display = "block";
+            items.innerHTML = html;
+            document.getElementById('noorder').style.display = "none";
+        }
+
+        let pr3 = 459;
+        let numbers3 = 1;
+        let number3 = document.getElementById('number3');
+        function plusItem3(){
+            pr3 = pr3 + 459;
+            numbers3 = numbers3 + 1;
+            if(numbers3>=10){
+                pr3 = 4590;
+                numbers3 = 10;
+            }
+            number3.innerText  = numbers3;
+            price3.innerHTML = `₹​ ${pr3}`;
+        }
+        function minusItem3(){
+            pr3 = pr3 - 459;
+            numbers3 = numbers3 - 1;
+            if(numbers3<=1){
+                numbers3 = 1;
+                pr3 = 459;
+            }
+            number3.innerText  = numbers3;
+            price3.innerHTML = `₹​ ${pr3}`;
+        }
+        function addItem3() {
+            num = 3;
+            html += `
+            <div class="items">
+                <div class="contant">
+                    <div class="image">
+                        <img src = "image${num}.jpg">
+                    </div>
+                    <div class="name">
+                        Meal for 2: Farmhouse Combo
+                    </div>
+                </div>
+                <div class="quantity">
+                    quantity = ${numbers3}
+                </div><br>
+                <div class="prices">
+                   Price = ${pr3}/-
+                </div>
+            </div>
+            `;
+            confirm.style.display = "block";
+            orders.style.display = "block";
+            items.innerHTML = html;
+            document.getElementById('noorder').style.display = "none";
+        }
+
+        let pr4 = 699;
+        let numbers4 = 1;
+        let number4 = document.getElementById('number4');
+        function plusItem4(){
+            pr4 = pr4 + 699;
+            numbers4 = numbers4 + 1;
+            if(numbers4>=10){
+                pr4 = 6990;
+                numbers4 = 10;
+            }
+            number4.innerText  = numbers4;
+            price4.innerHTML = `₹​ ${pr4}`;
+        }
+        function minusItem4(){
+            pr4 = pr4 - 699;
+            numbers4 = numbers4 - 1;
+            if(numbers4<=1){
+                numbers4 = 1;
+                pr4 = 699;
+            }
+            number4.innerText  = numbers4;
+            price4.innerHTML = `₹​ ${pr4}`;
+        }
+        function addItem4() {
+            num = 4;
+            html += `
+            <div class="items">
+                <div class="contant">
+                    <div class="image">
+                        <img src = "image${num}.jpg">
+                    </div>
+                    <div class="name">
+                        Party Combo - 4 Veg Pizza varieties + Sides & Pepsi
+                    </div>
+                </div>
+                <div class="quantity">
+                    quantity = ${numbers4}
+                </div><br>
+                <div class="prices">
+                   Price = ${pr4}/-
+                </div>
+            </div>
+            `;
+            confirm.style.display = "block";
+            orders.style.display = "block";
+            items.innerHTML = html;
+            document.getElementById('noorder').style.display = "none";
+        }
+
+        let pr5 = 399;
+        let numbers5 = 1;
+        let number5 = document.getElementById('number5');
+        function plusItem5(){
+            pr5 = pr5 + 399;
+            numbers5 = numbers5 + 1;
+            if(numbers5>=10){
+                pr5 = 3990;
+                numbers5 = 10;
+            }
+            number5.innerText  = numbers5;
+            price5.innerHTML = `₹​ ${pr5}`;
+        }
+        function minusItem5(){
+            pr5 = pr5 - 399;
+            numbers5 = numbers5 - 1;
+            if(numbers5<=1){
+                numbers5 = 1;
+                pr5 = 399;
+            }
+            number5.innerText  = numbers5;
+            price5.innerHTML = `₹​ ${pr5}`;
+        }
+        function addItem5() {
+            num = 5;
+            html += `
+            <div class="items">
+                <div class="contant">
+                    <div class="image">
+                        <img src = "image${num}.webp">
+                    </div>
+                    <div class="name">
+                        Margherita
+                    </div>
+                </div>
+                <div class="quantity">
+                    quantity = ${numbers5}
+                </div><br>
+                <div class="prices">
+                   Price = ${pr5}/-
+                </div>
+            </div>
+            `;
+            confirm.style.display = "block";
+            orders.style.display = "block";
+            items.innerHTML = html;
+            document.getElementById('noorder').style.display = "none";
+        }
+
+        let pr6 = 499;
+        let numbers6 = 1;
+        let number6 = document.getElementById('number6');
+        function plusItem6(){
+            pr6 = pr6 + 499;
+            numbers6 = numbers6 + 1;
+            if(numbers6>=10){
+                pr6 = 4990;
+                numbers6 = 10;
+            }
+            number6.innerText  = numbers6;
+            price6.innerHTML = `₹​ ${pr6}`;
+        }
+        function minusItem6(){
+            pr6 = pr6 - 499;
+            numbers6 = numbers6 - 1;
+            if(numbers6<=1){
+                numbers6 = 1;
+                pr6 = 499;
+            }
+            number6.innerText  = numbers6;
+            price6.innerHTML = `₹​ ${pr6}`;
+        }
+        function addItem6() {
+            num = 6;
+            html += `
+            <div class="items">
+                <div class="contant">
+                    <div class="image">
+                        <img src = "image${num}.webp">
+                    </div>
+                    <div class="name">
+                        Farmhouse
+                    </div>
+                </div>
+                <div class="quantity">
+                    quantity = ${numbers6}
+                </div><br>
+                <div class="prices">
+                   Price = ${pr6}/-
+                </div>
+            </div>
+            `;
+            confirm.style.display = "block";
+            orders.style.display = "block";
+            items.innerHTML = html;
+            document.getElementById('noorder').style.display = "none";
+        }
+
+        let pr7 = 599;
+        let numbers7 = 1;
+        let number7 = document.getElementById('number7');
+        function plusItem7(){
+            pr7 = pr7 + 599;
+            numbers7 = numbers7 + 1;
+            if(numbers7>=10){
+                pr7 = 5990;
+                numbers7 = 10;
+            }
+            number7.innerText  = numbers7;
+            price7.innerHTML = `₹​ ${pr7}`;
+        }
+        function minusItem7(){
+            pr7 = pr7 - 599;
+            numbers7 = numbers7 - 1;
+            if(numbers7<=1){
+                numbers7 = 1;
+                pr7 = 599;
+            }
+            number7.innerText  = numbers7;
+            price7.innerHTML = `₹​ ${pr7}`;
+        }
+        function addItem7() {
+            num = 7;
+            html += `
+            <div class="items">
+                <div class="contant">
+                    <div class="image">
+                        <img src = "image${num}.webp">
+                    </div>
+                    <div class="name">
+                        Veg Extravaganza
+                    </div>
+                </div>
+                <div class="quantity">
+                    quantity = ${numbers7}
+                </div><br>
+                <div class="prices">
+                   Price = ${pr7}/-
+                </div>
+            </div>
+            `;
+            confirm.style.display = "block";
+            orders.style.display = "block";
+            items.innerHTML = html;
+            document.getElementById('noorder').style.display = "none";
+        }
+
+        let pr8 = 449;
+        let numbers8 = 1;
+        let number8 = document.getElementById('number8');
+        function plusItem8(){
+            pr8 = pr8 + 449;
+            numbers8 = numbers8 + 1;
+            if(numbers8>=10){
+                pr8 = 4490;
+                numbers8 = 10;
+            }
+            number8.innerText  = numbers8;
+            price8.innerHTML = `₹​ ${pr8}`;
+        }
+        function minusItem8(){
+            pr8 = pr8 - 449;
+            numbers8 = numbers8 - 1;
+            if(numbers8<=1){
+                numbers8 = 1;
+                pr8 = 449;
+            }
+            number8.innerText  = numbers8;
+            price8.innerHTML = `₹​ ${pr8}`;
+        }
+        function addItem8() {
+            num = 8;
+            html += `
+            <div class="items">
+                <div class="contant">
+                    <div class="image">
+                        <img src = "image${num}.webp">
+                    </div>
+                    <div class="name">
+                        Veggie Paradise
+                    </div>
+                </div>
+                <div class="quantity">
+                    quantity = ${numbers8}
+                </div><br>
+                <div class="prices">
+                   Price = ${pr8}/-
+                </div>
+            </div>
+            `;
+            confirm.style.display = "block";
+            orders.style.display = "block";
+            items.innerHTML = html;
+            document.getElementById('noorder').style.display = "none";
+        }
+
+        let pr9 = 349;
+        let numbers9 = 1;
+        let number9 = document.getElementById('number9');
+        function plusItem9(){
+            pr9 = pr9 + 349;
+            numbers9 = numbers9 + 1;
+            if(numbers9>=10){
+                pr9 = 3490;
+                numbers9 = 10;
+            }
+            number9.innerText  = numbers9;
+            price9.innerHTML = `₹​ ${pr9}`;
+        }
+        function minusItem9(){
+            pr9 = pr9 - 349;
+            numbers9 = numbers9 - 1;
+            if(numbers9<=1){
+                numbers9 = 1;
+                pr9 = 349;
+            }
+            number9.innerText  = numbers9;
+            price9.innerHTML = `₹​ ${pr9}`;
+        }
+        function addItem9() {
+            num = 9;
+            html += `
+            <div class="items">
+                <div class="contant">
+                    <div class="image">
+                        <img src = "image${num}.webp">
+                    </div>
+                    <div class="name">
+                        Cheese n Corn
+                    </div>
+                </div>
+                <div class="quantity">
+                    quantity = ${numbers9}
+                </div><br>
+                <div class="prices">
+                   Price = ${pr9}/-
+                </div>
+            </div>
+            `;
+            confirm.style.display = "block";
+            orders.style.display = "block";
+            items.innerHTML = html;
+            document.getElementById('noorder').style.display = "none";
+        }
+
+        let pr10 = 699;
+        let numbers10 = 1;
+        let number10 = document.getElementById('number10');
+        function plusItem10(){
+            pr10 = pr10 + 699;
+            numbers10 = numbers10 + 1;
+            if(numbers10>=10){
+                pr10 = 6990;
+                numbers10 = 10;
+            }
+            number10.innerText  = numbers10;
+            price10.innerHTML = `₹​ ${pr10}`;
+        }
+        function minusItem10(){
+            pr10 = pr10 - 699;
+            numbers10 = numbers10 - 1;
+            if(numbers10<=1){
+                numbers10 = 1;
+                pr10 = 699;
+            }
+            number10.innerText  = numbers10;
+            price10.innerHTML = `₹​ ${pr10}`;
+        }
+        function addItem10() {
+            num = 10;
+            html += `
+            <div class="items">
+                <div class="contant">
+                    <div class="image">
+                        <img src = "image${num}.jpg">
+                    </div>
+                    <div class="name">
+                        The Unthinkable Pizza
+                    </div>
+                </div>
+                <div class="quantity">
+                    quantity = ${numbers10}
+                </div><br>
+                <div class="prices">
+                   Price = ${pr10}/-
+                </div>
+            </div>
+            `;
+            confirm.style.display = "block";
+            orders.style.display = "block";
+            items.innerHTML = html;
+            document.getElementById('noorder').style.display = "none";
+        }
+
+        let pr11 = 599;
+        let numbers11 = 1;
+        let number11 = document.getElementById('number11');
+        function plusItem11(){
+            pr11 = pr11 + 599;
+            numbers11 = numbers11 + 1;
+            if(numbers11>=10){
+                pr11 = 5990;
+                numbers11 = 10;
+            }
+            number11.innerText  = numbers11;
+            price11.innerHTML = `₹​ ${pr11}`;
+        }
+        function minusItem11(){
+            pr11 = pr11 - 599;
+            numbers11 = numbers11 - 1;
+            if(numbers11<=1){
+                numbers11 = 1;
+                pr11 = 599;
+            }
+            number11.innerText  = numbers11;
+            price11.innerHTML = `₹​ ${pr11}`;
+        }
+        function addItem11() {
+            num = 11;
+            html += `
+            <div class="items">
+                <div class="contant">
+                    <div class="image">
+                        <img src = "image${num}.jpg">
+                    </div>
+                    <div class="name">
+                        The 4 Cheese Pizza
+                    </div>
+                </div>
+                <div class="quantity">
+                    quantity = ${numbers11}
+                </div><br>
+                <div class="prices">
+                   Price = ${pr11}/-
+                </div>
+            </div>
+            `;
+            confirm.style.display = "block";
+            orders.style.display = "block";
+            items.innerHTML = html;
+            document.getElementById('noorder').style.display = "none";
+        }
+
+        let pr12 = 349;
+        let numbers12 = 1;
+        let number12 = document.getElementById('number12');
+        function plusItem12(){
+            pr12 = pr12 + 349;
+            numbers12 = numbers12 + 1;
+            if(numbers12>=10){
+                pr12 = 3490;
+                numbers12 = 10;
+            }
+            number12.innerText  = numbers12;
+            price12.innerHTML = `₹​ ${pr12}`;
+        }
+        function minusItem12(){
+            pr12 = pr12 - 349;
+            numbers12 = numbers12 - 1;
+            if(numbers12<=1){
+                numbers12 = 1;
+                pr12 = 349;
+            }
+            number12.innerText  = numbers12;
+            price12.innerHTML = `₹​ ${pr12}`;
+        }
+        function addItem12() {
+            num = 12;
+            html += `
+            <div class="items">
+                <div class="contant">
+                    <div class="image">
+                        <img src = "image${num}.jpg">
+                    </div>
+                    <div class="name">
+                        The Cheese Dominator
+                    </div>
+                </div>
+                <div class="quantity">
+                    quantity = ${numbers12}
+                </div><br>
+                <div class="prices">
+                   Price = ${pr12}/-
+                </div>
+            </div>
+            `;
+            confirm.style.display = "block";
+            orders.style.display = "block";
+            items.innerHTML = html;
+            document.getElementById('noorder').style.display = "none";
+        }
+        confirm.addEventListener('click',function() {
+            document.getElementById('orderconf').style.display = "block";
+        });
+        let name = document.getElementById('name');
+        let address = document.getElementById('address');
+        let city = document.getElementById('city');
+        let pcode = document.getElementById('pcode');
+        let error = document.getElementById('error');
+        document.getElementById('submit').addEventListener('click',function() {
+            namedata = name.value;
+            adddata = address.value;
+            citydata = city.value;
+            pcodedata = pcode.value;
+            if(namedata===''){
+                error.style.display = "flex";
+                setTimeout(function(){
+		    		error.style.display = "none";
+		    	},4000);
+            }
+            else if(adddata===''){
+                error.style.display = "flex";
+                setTimeout(function(){
+		    		error.style.display = "none";
+		    	},4000);
+            }
+            else if(citydata===''){
+                error.style.display = "flex";
+                setTimeout(function(){
+		    		error.style.display = "none";
+		    	},4000);
+            }
+            else if(pcode===''){
+                error.style.display = "flex";
+                setTimeout(function(){
+		    		error.style.display = "none";
+		    	},4000);
+            }
+            else{
+                document.getElementById('confermation').style.display = "block";
+                document.getElementById('orderconf').style.display = "none";
+            }
+        });
+        document.getElementById('back').addEventListener('click',function() {
+            document.getElementById('confermation').style.display = "none";
+        });
+    </script>
+    <script>
+        // document.getElementById(btn_click).addEventListener('click',function(){
+        //     document.get
+        // });
+        document.getElementById('close_btn').style.display = "none";
+        document.getElementById('open_btn').addEventListener('click',function(){
+            document.getElementById('open_btn').style.display = "none";
+            document.getElementById('close_btn').style.display = "block";
+            document.getElementById('header1').style.display = "block";
+        });
+        document.getElementById('close_btn').addEventListener('click',function(){
+            document.getElementById('close_btn').style.display = "none";
+            document.getElementById('open_btn').style.display = "block";
+            document.getElementById('header1').style.display = "none";
+        });
+    </script>
+</body>
+</html>
